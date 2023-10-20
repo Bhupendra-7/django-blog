@@ -21,7 +21,7 @@
                 <figure class="mb-4"><img class="img-fluid rounded" src="{{ single_blog.featured_image.url }}" alt="..." /></figure>
                 <!-- Post content-->
                 <section class="mb-5">
-                    <p class="fs-5 mb-4">{{single_blog.short_description}}</p>
+                    <p class="fs-5 mb-4"><b>{{single_blog.short_description}}</b></p>
                     <p class="fs-5 mb-4">{{single_blog.blog_body}}</p>
 
                     <!-- Comments -->
@@ -47,7 +47,7 @@
                         <form method="POST">
                             {% csrf_token %}
                             <div class="form-group">
-                                <textarea name="comment" class="form-control" placeholder="Write your comment"></textarea>
+                                <textarea name="comment" class="form-control" placeholder="Post a comment"></textarea>
                                 <input type="submit" value="Submit" class="btn btn-danger mt-2">
                             </div>
                         </form>
